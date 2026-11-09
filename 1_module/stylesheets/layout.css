@@ -267,3 +267,29 @@ blockquote::before {
   border: 1px solid cornflowerblue;
   background-color: cornflowerblue;
 }
+
+/* примеры адаптивной вёрстки */
+@media screen and (max-width: 1280px) {
+  .sidebar {
+    display: none;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .article h1,
+  .article h2,
+  .article h3,
+  .article h4,
+  .article h5,
+  .article p,
+  .article ul,
+  .article ol,
+  .article blockquote,
+  .article hr,
+  .article img {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .article img {
+    padding: 0;
+  }
+}
